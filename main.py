@@ -3,7 +3,7 @@ import random
 
 # Game window
 pygame.init()
-WIDTH, HEIGHT = 1280, 800
+WIDTH, HEIGHT = 1024, 640
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Neon Racer")
 clock = pygame.time.Clock()
@@ -86,9 +86,7 @@ def update_pickups(pickups):
 running = True
 while running:
     screen.fill(BG_COLOR)
-    clock.tick(60)    
-    pygame.display.update()
-    
+        
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             running = False 
@@ -134,6 +132,9 @@ while running:
         pygame.draw.ellipse(screen, PICKUP_COLOR, (pickup[0], pickup[1], 15, 15)) 
 
     score_text = font.render(f'Score: {score}', True, (255, 255, 255))
-    screen.blit(score_text, (10, 10))      # Draw score at the top left corner   
+    screen.blit(score_text, (10, 10))      # Draw score at the top left corner  
+
+    clock.tick(60)    
+    pygame.display.update() 
     
 pygame.quit()  # Quit the game        
