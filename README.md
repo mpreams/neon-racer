@@ -1,0 +1,2 @@
+<h1> NEON RACER: A Pygame Guide - https://techbeamers.com/python-game-code-in-pygame/ </h1>
+Neon Racer, a unique game developed with python game code using Pygame. We covered everything from setting up your environment, creating a scrolling background, and handling player movement, to generating obstacles, pickups, collision detection, and scoring. Each section is a puzzle piece that you combine to form the complete game.
